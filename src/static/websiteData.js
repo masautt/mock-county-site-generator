@@ -219,7 +219,7 @@ module.exports = {
         "https://cdn2.iconfinder.com/data/icons/random-set-1/415/Asset_88-256.png",
         "https://cdn2.iconfinder.com/data/icons/random-set-1/433/Asset_95-256.png",
         "https://cdn2.iconfinder.com/data/icons/random-set-1/467/Asset_79-256.png",
-        "https://cdn2.iconfinder.com/data/icons/random-set-1/474/Asset_96-256.png"
+        "https://cdn2.iconfinder.com/data/icons/random-set-1/389/Asset_78-256.png"
       ],
       banner:
         "https://images.unsplash.com/photo-1561217999-aca4cb218af6?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=500&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=1920"
@@ -320,6 +320,14 @@ module.exports = {
       banner:
         "https://images.unsplash.com/photo-1559941991-af342da43fa4?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=500&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=1920"
     },
+  ],
+  iconLinks : [
+    `search`,
+    `contact`,
+    "calendar",
+    "reports",
+    "questions",
+    "map"
   ],
   iconText: [
     [

@@ -1,0 +1,83 @@
+{{> infoHeaderPartial}}
+<div class="mx-auto" style="width: 800px;">
+  <br>
+  <h1 style="text-align: center">Mock County Appraisal Site</h1>
+  <br>
+  <h3>What?</h3>
+  <p>This site generates 1,000,000 unique layouts for a county appraisal site.</p>
+  <br>
+  <h3>Why?</h3>
+  <p>There are 3,007 counties in the United States.
+    If we wanted to scrape data from each, we would have to train 3,007 separate RPA Bots to navigate through each site
+    to find appraisal data.
+    Not to mention, if one of these site updates, the bot would no longer work.</p>
+  <p>By generating our own county sites (with minimal variations), we can train a single Cognitive RPA bot to identify
+    these differences and
+    use machine learning to locate public records on all county sites.
+  </p>
+  <p>The goal is to have the bot navigate from <a href="/home">/home</a> to <a href="/search">/search</a> to <a
+      href="/data">/data</a> and scrape the ownerName, siteAddress, and mailAddress.</p>
+  <br>
+  <h3>How?</h3>
+  <p>When you navigate to a page, a random number from 0 to 999999 is generated. Each place value in this number
+    corresponds to a variation of data:
+  </p>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Variable </th>
+        <th scope="col">Description </th>
+        <th scope="col">Location</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">0</th>
+        <td>CountyId</td>
+        <td>Changes the appraisal data</td>
+        <td><a href="/data">/data</a></td>
+      </tr>
+      <tr>
+        <th scope="row">1</th>
+        <td>IconId</td>
+        <td>Changes the icon set</td>
+        <td><a href="/home">/home</a>, <a href="/search">/search</a>, <a href="/data">/data</a></td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>LinkTextId</td>
+        <td>Changes the icon text for each nav item.</td>
+        <td><a href="/home">/home</a>, <a href="/search">/search</a>, <a href="/data">/data</a></td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>NavId</td>
+        <td>Changes the layout of the Navbar.</td>
+        <td><a href="/home">/home</a>, <a href="/search">/search</a>, <a href="/data">/data</a></td>
+      </tr>
+      <tr>
+        <th scope="row">4</th>
+        <td>SearchId</td>
+        <td>Changes the layout of the Search Menu.</td>
+        <td><a href="/search">/search</a></td>
+      </tr>
+      <tr>
+        <th scope="row">5</th>
+        <td>dataId</td>
+        <td>Changes the layout of the Data Menu.</td>
+        <td><a href="/data">/data</a></td>
+      </tr>
+    </tbody>
+  </table>
+    <h3>Where?</h3>
+  <p>To start, navigate to the <a href="/home">/home</a> endpoint. Or click the <a href="/home">▶️ Start</a> button at the top.</p>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+</div>
+{{!-- {{> footerPartial}} --}}
